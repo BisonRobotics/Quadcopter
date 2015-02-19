@@ -41,7 +41,7 @@ public class GUI extends javax.swing.JFrame {
         initComponents();
         initGamepad();
         initPrintStream();
-        initSerial();
+        //initSerial();
 
 
         
@@ -307,9 +307,11 @@ public class GUI extends javax.swing.JFrame {
         /* Create and display the form */
         
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 GUI gui = new GUI();
                 gui.pack();
+                System.out.println("Working");
                 gui.setVisible(true);
             }
         });

@@ -11,7 +11,7 @@ Servo myMotor;
 
 void turnOnOff(){
   for(int i=0; i<50; i++){
-    myMotor.write(20);
+    myMotor.write(12);
   }
 }
 
